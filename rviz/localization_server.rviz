@@ -6,13 +6,14 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /Map1
         - /Map1/Topic1
         - /Map1/Update Topic1
         - /TF1
         - /TF1/Tree1
-        - /TF1/Tree1/map1
-        - /TF1/Tree1/map1/robot_odom1
         - /RobotModel1/Description Topic1
+        - /PoseArray1
+        - /PoseArray1/Topic1
       Splitter Ratio: 0.5
     Tree Height: 621
   - Class: rviz_common/Selection
@@ -100,6 +101,8 @@ Visualization Manager:
           Value: true
         robot_imu_link:
           Value: true
+        robot_left_wheel_link:
+          Value: true
         robot_odom:
           Value: true
         robot_omni_backwheel_link:
@@ -107,6 +110,8 @@ Visualization Manager:
         robot_omni_front_leftwheel_link:
           Value: true
         robot_omni_front_rightwheel_link:
+          Value: true
+        robot_right_wheel_link:
           Value: true
         robot_top_cover_link:
           Value: true
@@ -136,11 +141,15 @@ Visualization Manager:
                     {}
                 robot_imu_link:
                   {}
+                robot_left_wheel_link:
+                  {}
                 robot_omni_backwheel_link:
                   {}
                 robot_omni_front_leftwheel_link:
                   {}
                 robot_omni_front_rightwheel_link:
+                  {}
+                robot_right_wheel_link:
                   {}
               robot_top_cover_link:
                 {}
@@ -235,6 +244,26 @@ Visualization Manager:
         History Policy: Keep Last
         Reliability Policy: Reliable
         Value: /amcl_pose
+      Value: true
+    - Alpha: 1
+      Arrow Length: 0.30000001192092896
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz_default_plugins/PoseArray
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: PoseArray
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic:
+        Depth: 5
+        Durability Policy: Volatile
+        History Policy: Keep Last
+        Reliability Policy: Best Effort
+        Value: /particlecloud
       Value: true
   Enabled: true
   Global Options:
