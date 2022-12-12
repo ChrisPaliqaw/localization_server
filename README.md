@@ -1,6 +1,7 @@
 # localization_server
 Use AMCL to localize an RB-1 in a warehouse
 
+For Step 1 Mapping, see the [cartographer_slam](https://github.com/christophomos/cartographer_slam) package
 
 # Step 2: Localization
 When running in the warehouse, you MUST run the following script first in each shell
