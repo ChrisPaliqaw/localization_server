@@ -29,6 +29,7 @@ If localization is working correctly, and no poses have yet been sent to `/initi
 if you don't see that, try restarting the `bridge` and `rviz2`
 
 Run rviz2
+
 If creating a new rviz2 config file, make especially sure to match the QOS of the map plugin to the QOS setting of the map server
 Note that amcl won't publish the map frame until given a 2D pose estimate
 ```
