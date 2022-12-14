@@ -1,6 +1,9 @@
 # localization_server
 Use AMCL to localize an RB-1 in a warehouse
 
+## Dependencies
+- [cartographer_slam](https://github.com/christophomos/cartographer_slam)
+
 For Step 1 Mapping, see the [cartographer_slam](https://github.com/christophomos/cartographer_slam) package
 
 # Step 2: Localization
